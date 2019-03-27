@@ -1,0 +1,25 @@
+{
+  "name": "app-tareas-mongoose",
+  "version": "1.0.0",
+  "description": "Ejercicio práctico para conectar un API rest y un frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "export NODE_ENV=production || NODE_ENV=production || SET\"NODE_ENV=production\" && node server/",
+    "dev": "export NODE_ENV=development || NODE_ENV=development || SET\"NODE_ENV=development\" && nodemon server/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pilarargudo/app-tareas-mongoose.git"
+  },
+  "author": "pilarargudo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pilarargudo/app-tareas-mongoose/issues"
+  },
+  "homepage": "https://github.com/pilarargudo/app-tareas-mongoose#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.4.20"
+  }
+}
