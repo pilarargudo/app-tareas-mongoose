@@ -12,8 +12,9 @@ Ejercicio práctico para conectar un API rest y un frontend
 
 ## Features
 
-- [ ] backend en express con dos endpoints
-- [ ] POST /tasks
+- [x] backend en express 
+- [x] Modelo de datos con mongoose 
+- [x] POST /tasks
 - [ ] GET /tasks
 - [ ] Load tasks from frontend
 - [ ] Save new task from frontend to DB

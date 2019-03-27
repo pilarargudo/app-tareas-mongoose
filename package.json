@@ -20,6 +20,7 @@
   "homepage": "https://github.com/pilarargudo/app-tareas-mongoose#readme",
   "dependencies": {
     "express": "^4.16.4",
+    "lodash": "^4.17.11",
     "mongoose": "^5.4.20"
   }
 }
