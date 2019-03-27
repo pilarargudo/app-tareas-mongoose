@@ -15,11 +15,11 @@ Ejercicio práctico para conectar un API rest y un frontend
 - [x] backend en express 
 - [x] Modelo de datos con mongoose 
 - [x] POST /tasks
-- [ ] GET /tasks
+- [x] GET /tasks
+- [x] DELETE /tasks/:id
 - [ ] Load tasks from frontend
 - [ ] Save new task from frontend to DB
 - [ ] Delete task from DOM
-- [ ] DELETE /tasks/:id
 - [ ] complete task in DOM
 - [ ] complete task from DOM to DB
 - [ ] PUT /tasks/:id

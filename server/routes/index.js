@@ -6,17 +6,28 @@ const router = require('express').Router();
 // nos traemos el modelo del esquema de tareas
 const Task = require('../models/Task');
 
-// cambiamos app por router
-router.get('/', (req, res) => {
-  //res.send(process.env.NODE_ENV)
-  res.send({})
-
-})
-
 /**
  *Tasks Routers,
  */
 
+// LIST
+router.get('/', (req, res) => {
+  // res.send(process.env.NODE_ENV)
+  // res.send({})
+
+  // petición sobre la colección de tasks
+  // find recibe las opciones de búsqueda, como queremos todos, lo pasamos vacío
+  Task.find({})
+  .then( tasks => {
+    res.send(tasks);
+  })
+  .catch( err => {
+    res.status(500).send(err);
+  })
+
+})
+
+// CREATE
 router.post('/tasks', (req, res) => {
   // recibimos todo lo que nos llegue
   //console.log(req.body);
@@ -33,6 +44,18 @@ router.post('/tasks', (req, res) => {
 
 });
 
+// DELETE
+// recogemos parámetros de la url para marcar qué eliminar
+router.delete('/task/:task_id', (req, res) => {
+  // primero lo buscamos para obtener el id y notificar qué vamos a eliminar
+  Task.findByIdAndDelete(req.params.task_id)
+  .then( task => {
+    res.send(task);
+  })
+  .catch( err => {
+    res.status(500).send(err);
+  })
+})
 
 
 // para poder emplearlo:
