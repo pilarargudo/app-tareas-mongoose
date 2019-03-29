@@ -9,6 +9,7 @@ Ejercicio práctico para conectar un API rest y un frontend
 - DOM manipulation vanilla JS
 - flexbox
 - mongoose
+- bower
 
 ## Features
 
